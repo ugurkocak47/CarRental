@@ -17,10 +17,12 @@ namespace Business.Constants
         public static string SystemMaintenance = "System is in maintenance"; //E00006
         public static string BrandNameShortToAdd = "The brand name you provided is too short to be added"; //E00007
         public static string ColorNameShortToAdd = "The color name you provided is too short to be added"; //E00008
-
-
-
-
+        public static string FirstOrLastNameShort = "Your first and last name must be at least 2 letters"; //E00009
+        public static string CarIsAlreadyRented = "The car you've chosen is already rented"; //E00010
+        public static string UserIdInvalid = "The user id is invalid"; //E00011
+        public static string CustomerIdInvalid = "The customer id is invalid"; //E00012
+        public static string RentalIdInvalid = "The rental id is invalid"; //E00013
+        public static string CompanyNameShort = "Company name must be at least 2 letters"; //E00014
 
         //Success
         public static string AvailableCarsListed = "Avaliable cars are listed"; //S00001
@@ -37,6 +39,17 @@ namespace Business.Constants
         public static string ColorAdded = "Color added"; //S00012
         public static string ColorUpdated = "Color updated"; //S00013
         public static string ColorDeleted = "Color deleted"; //S00014
+        public static string UserAdded = "User added"; //S00015
+        public static string UserDeleted = "User deleted"; //S00016
+        public static string UserUpdated = "User updated"; //S00017
+        public static string UsersListed = "Users are listed"; //S00018
+        public static string CustomerAdded = "Customer added"; //S00019
+        public static string CustomerDeleted = "Customer deleted"; //S00020
+        public static string CustomerUpdated = "Customer updated"; //S00021
+        public static string CustomersListed = "Customers are listed"; //S00022
+        public static string RentalUpdated = "Car rental is updated"; //S00023
+        public static string RentalRemoved = "Car rental is removed"; //S00024
+        public static string RentalsListed = "Rentals are listed"; //S00025
  
     }
 }
