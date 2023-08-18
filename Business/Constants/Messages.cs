@@ -50,6 +50,12 @@ namespace Business.Constants
         public static string RentalUpdated = "Car rental is updated"; //S00023
         public static string RentalRemoved = "Car rental is removed"; //S00024
         public static string RentalsListed = "Rentals are listed"; //S00025
+        public static string CarListed = "Car listed"; //S00026
+        public static string BrandListed = "Brand listed"; //S00027
+        public static string ColorListed = "Color listed"; //S00028
+        public static string UserListed = "User listed"; //S00029
+        public static string CustomerListed = "Customer listed"; //S00030
+        public static string RentalListed = "Rental listed"; //S00031
  
     }
 }

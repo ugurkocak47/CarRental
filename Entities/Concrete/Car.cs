@@ -1,6 +1,7 @@
 ﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
@@ -10,6 +11,7 @@ namespace Entities.Concrete
 {
     public class Car:IEntity
     {
+
         public int CarId { get; set; }
         public string CarName { get; set; }
         public int BrandId { get; set; }
@@ -17,6 +19,5 @@ namespace Entities.Concrete
         public int ModelYear { get; set; }
         public double DailyPrice { get; set; }
         public string Description { get; set; }
-        public bool IsRented { get; set; }
     }
 }

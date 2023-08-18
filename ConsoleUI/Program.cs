@@ -21,7 +21,7 @@ namespace ConsoleUI
             //UpdateCarTest();
             //CarDeleteTest();
             CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetCarDetails())
+            foreach (var car in carManager.GetCarDetails().Data)
             {
                 Console.WriteLine("Id:{0}   Car: {1}     Color: {2}   Details: {3}    Daily Price: {4}",car.CarId,car.BrandName,car.ColorName,car.Description,car.DailyPrice);
             }
@@ -124,7 +124,7 @@ namespace ConsoleUI
         {
             CarManager carManager = new CarManager(new EfCarDal());
 
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetAll().Data)
             {
                 Console.WriteLine("{0} : {1}", car.CarId, car.ModelYear);
             }
