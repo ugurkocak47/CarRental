@@ -24,6 +24,10 @@ namespace Business.Constants
         public static string RentalIdInvalid = "The rental id is invalid"; //E00013
         public static string CompanyNameShort = "Company name must be at least 2 letters"; //E00014
         public static string CarImageLimitExceeded = "This car already has the max amount of images(5 Images Max)"; //E00015
+        public static string AuthorizationDenied = "Authorizaton denied"; //E00016
+        public static string UserNotFound = "User not found"; //E00017
+        public static string PasswordError = "Password error"; //E00018
+        public static string UserAlreadyExists = "User already exists"; //E00019
 
         //Success
         public static string AvailableCarsListed = "Avaliable cars are listed"; //S00001
@@ -62,6 +66,9 @@ namespace Business.Constants
         public static string CarImageDeleted = "Car image deleted"; //S00034
         public static string CarImagesListed = "Car images are listed"; //S00035
         public static string CarImageListed = "Car image listed"; //S00036
- 
+        public static string UserRegistered = "User registered"; //S00037
+        public static string SuccessfulLogin = "Login successful"; //S00038
+        public static string AccessTokenCreated = "Access token created"; //S00039
     }
-}
+    }
+

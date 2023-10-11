@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Core.Entities.Concrete;
 
 namespace Business.ValidationRules.FluentValidation
 {
@@ -17,10 +18,6 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(u=>u.LastName).NotEmpty();
             RuleFor(u => u.Email).NotEmpty();
             RuleFor(u => u.Email.Length).GreaterThanOrEqualTo(11);
-            RuleFor(u => u.Password).NotEmpty();
-            RuleFor(u => u.Password).Must(IncludesSymbols);
-            RuleFor(u => u.Password).Must(IncludeUpperAndLower);
-            RuleFor(u=>u.Password.Length).GreaterThanOrEqualTo(6);
         }
         private bool IncludesSymbols(string arg)
         {
