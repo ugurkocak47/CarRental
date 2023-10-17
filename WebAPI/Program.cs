@@ -4,6 +4,8 @@ using Autofac.Extensions.DependencyInjection;
 using Business.Abstract;
 using Business.Concrete;
 using Business.DependencyResolvers.Autofac;
+using Core.DependencyResolvers;
+using Core.Extensions;
 using Core.Utilites.IoC;
 using Core.Utilites.Security.Encryption;
 using Core.Utilites.Security.JWT;
@@ -61,7 +63,9 @@ namespace WebAPI
                         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
                     };
                 });
-            ServiceTool.Create(builder.Services);
+            builder.Services.AddDependencyResolvers(new ICoreModule[]
+                {new CoreModule()}
+            );
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
